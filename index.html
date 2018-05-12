@@ -3,9 +3,13 @@
 <head>
 	<title>курсовая</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="dist/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<script type="text/javascript" src="dist/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/owl.carousel.min.js"></script>
 </head>
 <body>
 	<header>
@@ -16,16 +20,139 @@
 	<main class="main-block">
 		<div class="background-block">
 			<div class="user-content">
-				<div class="user-content__block user-content__slider">
-					<img src="dist/img/slide-2.jpg">
+				<div class="user-content__block user-content__slider ">
+					<div class="owl-carousel owl-theme">
+						<div><img src="dist/img/slide-2.jpg"></div>
+						<div><img src="dist/img/slide-1.jpg"></div>
+						<div><img src="dist/img/slide-3.jpg"></div>
+						<div><img src="dist/img/slide-4.jpg"></div>
+					</div>
 				</div>
+			
 				<div class="user-content__block user-content__user-form user-form">
 					<div class="user-form__title">
 						Join us now. It's FREE
 					</div>
-					<form>
+					<form name="male_female" action="" method="post">
+						<label>I am</label>
+						<label class="button__iconfemale_orange" for="female"><img src="dist\img/Shape-10-copy-4.jpg" alt="female" ></label>
+						<input type="radio" name="sex" id="female" checked>
+						<label class="button__iconmale_orange" for="male"><img src="dist\img/Shape-10-copy-41.jpg"" alt="female" ></label>
+						<input type="radio" name="sex" id="male">
+							
+							
+						<label><img src="dist\img/search.jpg"> Looking for</label>
+						
 						<label for="name">Name</label>
 						<input type="text" name="user name" id=name required="Enter your name">
+						<div class="selectAge">
+							<label>Age</label>
+							<select name="select" size=1>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>				
+							</select>
+							<select name="select" size=1>
+								<option>january</option> 
+								<option>february</option> 
+								<option>march</option> 
+								<option>april</option> 
+								<option>may</option> 
+								<option>june</option> 
+								<option>july</option> 
+								<option>august</option> 
+								<option>september</option> 
+								<option>october</option> 
+								<option>november</option> 
+								<option>december</option> 
+							</select>
+							<select name="select" size=1>
+								<option>1970</option> 
+								<option>1971</option> 
+								<option>1972</option> 
+								<option>1973</option> 
+								<option>1974</option> 
+								<option>1975</option> 
+								<option>1976</option> 
+								<option>1977</option> 
+								<option>1978</option> 
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+							</select>
+						</div>
+						<label for="city">City</label>
+						<select name="select" size=1>
+							<option>Texas</option>
+							<option>New Mexico</option>
+							<option>California</option>
+							<option>London</option>
+							<option>Chicago</option>
+							<option>Florida</option>
+							<option>Dallas</option>
+							<option>North Carolina</option>
+							<option>Arizona</option>
+							<option>Colorado</option>
+							<option>New York</option>
+							<option>Michigan</option>
+						</select>
+						<div>
+							<div>
+								<input type="checkbox" name="checkbox" id="Im cool">
+								<label for="Im cool">Im cool</label>
+								<input type="checkbox" name="checkbox" id="Lifes good">
+								<label for="Lifes good">Lifes good</label>
+							</div>
+							<div>
+								<input type="radio" name="radio" id="Tea">
+								<label for="Tea">Tea</label>
+								<input type="radio" name="radio" id="Beer">
+								<label for="Beer">Beer</label>
+							</div>
+						</div>
+						<input type="submit" name="Start now" value="Start now">
+
 					</form>
 
 
@@ -35,6 +162,18 @@
 		</div>
 
 	</main>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	  		$(".owl-carousel").owlCarousel({
+	  			items:1,
+	  			nav:false,
+	  			dotsEach:true,
+	  			autoplay:true,
+	  			autoplayTimeout:4000,
+	  			loop:true
 
+	  		});
+		});
+	</script>
 </body>
 </html>
