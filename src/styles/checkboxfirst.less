@@ -1,0 +1,32 @@
+.checkboxfirst{
+	&__checkbox{
+		display: none;
+	}
+	&__custom{
+		position: relative;
+		width: 10px;
+		height: 10px;	
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+	&__label, &__custom{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+}
+
+.checkboxfirst__checkbox:checked;{
+				content: "";             
+				display: block;			 
+				position: absolute;   
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+				left: 2px;
+				background: #413548;     
+				border-radius: 2px;
+}
+
+	
+		
