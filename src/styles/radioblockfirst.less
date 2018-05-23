@@ -1,5 +1,5 @@
-.checkboxfirst{
-	&__checkbox{
+.radioblockfirst{
+	&__radiobatton{
 		display: none;
 	}
 	&__custom{
@@ -7,12 +7,13 @@
 		width: 10px;
 		height: 10px;	
 		border: 1px solid #ccc;
+		border-radius: 7px;
 	}
 	&__label, &__custom{
 		display: inline-block;
 		vertical-align: middle;
 	}
-	&__checkbox:checked + &__custom::before {
+	&__radiobatton:checked + &__custom::before {
 	   content: "";
 	   display: block;
 	   position: absolute;
@@ -21,10 +22,6 @@
 	   bottom: 1px;
 	   left: 1px;
 	   background: #ff9e0f;
-	   
- 	}
+	   border-radius: 7px;
+	}
 }
-
-
-	
-		
