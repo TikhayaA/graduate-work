@@ -1,15 +1,28 @@
-@fontuserform:'Open Sans', sans-serif;
+@fonttittle:'Open Sans', sans-serif;
 
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('../fonts/@{urlName}.ttf');
+    font-weight: @weight;
+    font-style: @style;
+}
+@font-face {
+	.font (@fontuserform);
+}
+@fontuserform: 'sourcesanspro';
 .form
 	{
 		padding: 20px;
 	
 	&__title{
 		font-size: 44px;
-		font-family: @fontuserform;
+		font-family: @fonttittle;
 		display: table;
   background: linear-gradient(#f8f8f8 25%, #ff8414 66%, );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+	}
+	&__text{
+		font-family: @fontuserform;
 	}
 }
