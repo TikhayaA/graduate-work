@@ -29,29 +29,33 @@
 					</div>
 				</div>
 			
-				<div class="user-content__block user-content__user-form user-form">
-					<div class="user-form__title">
+				<div class="user-content__block form">
+					<div class="form__title">
 						Join us now. It's FREE
 					</div>
-					<form name="male_female" action="" method="post">
-						<label>I am</label>
-						<label class="button__iconfemale_orange" for="female"><img src="dist/img/Shape-10-copy-33.png" alt="female" ></label>
-						<input type="radio" name="sex" id="female" checked>
-						<label class="button__iconmale_orange" for="male"><img src="dist/img/Shape-10-copy-22.png"" alt="female" ></label>
-						<input type="radio" name="sex" id="male">
+					<form class="user-form" name="male_female" action="" method="post">
+						<div class="btnsex">
+							<label class="user-form__text ">I am</label>
+							<input class="btnsex__female btnsex__input" type="radio" name="sex" id="female" checked>
+							<label class="btnsex__female-label btnsex__label" for="female"></label>
+							<input class="btnsex__male btnsex__input" type="radio" name="sex" id="male">
+							<label class="btnsex__male-label btnsex__label" for="male"></label>
 							
+								
+								
+							<label class="user-form__text"> Looking for</label>
+							<input class="btnsex__female btnsex__input" type="radio" name="gender" id="genderfemale" >
+							<label class="btnsex__female-label btnsex__label" for="genderfemale"></label>
+							<input class="btnsex__male btnsex__input" type="radio" name="gender" id="gendermale" checked>
+							<label class="btnsex__male-label btnsex__label" for="gendermale"></label>
 							
-						<label><img src="dist/img/search1.png"> Looking for</label>
-						<label class="button__iconfemale_orange" for="female"><img src="dist/img/Shape-10-copy-42.png" alt="female" ></label>
-						<input type="radio" name="sex" id="female" checked>
-						<label class="button__iconmale_orange" for="male"><img src="dist/img/Shape-10-copy-43.png"" alt="female" ></label>
-						<input type="radio" name="sex" id="male">
+						</div>
 						<div class="field">
-						<label class="field__text" for="name">Name</label>
+						<label class="user-form__text" for="name">Name</label>
 						<input class="field__name" type="text" name="user name" id=name required="Enter your name">
 						</div>
 						<div class="selectAge">
-							<label>Age</label>
+							<label class="user-form__text">Age</label>
 							<select name="select" size=1>
 								<option>1</option>
 								<option>2</option>
@@ -127,8 +131,8 @@
 								<option>1994</option>
 							</select>
 						</div>
-						<label for="city">City</label>
-						<select name="select" size=1>
+						<label class="user-form__text" for="city">City</label>
+						<select class="field__city" name="select" size=1>
 							<option>Texas</option>
 							<option>New Mexico</option>
 							<option>California</option>
@@ -148,14 +152,14 @@
 									<label>
 									<input class="checkboxfirst__checkbox" type="checkbox" name="checkbox" checked>
 									<span class="checkboxfirst__custom"></span>
-									<span class="checkboxfirst__label">I'm cool</span>
+									<span class="checkboxfirst__label user-form__text">I'm cool</span>
 									</label>
 								</div>
 								<div class="checkboxfirst">
 									<label>
 									<input class="checkboxfirst__checkbox" type="checkbox" name="checkbox">
 									<span class="checkboxfirst__custom"></span>
-									<span class="checkboxfirst__label">Life's good</span>
+									<span class="checkboxfirst__label user-form__text">Life's good</span>
 									</label>
 								</div>
 							</div>
@@ -164,14 +168,14 @@
 									<label>
 										<input class="radioblockfirst__radiobatton" type="radio" name="radio" >
 										<span class="radioblockfirst__custom"></span>
-										<span class="rradioblockfirst__label">Tea</span>
+										<span class="rradioblockfirst__label user-form__text">Tea</span>
 									</label>
 								</div>
 								<div class="radioblockfirst">
 									<label>
 										<input class="radioblockfirst__radiobatton" type="radio" name="radio" checked >
 										<span class="radioblockfirst__custom"></span>
-										<span class="rradioblockfirst__label">Beer</span>
+										<span class="rradioblockfirst__label user-form__text">Beer</span>
 									</label>
 								</div>
 							</div>

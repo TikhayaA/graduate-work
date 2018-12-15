@@ -1,0 +1,45 @@
+@color: #ffa40a;
+.btnsex__input{
+	display: none;
+}
+.btnsex{
+	&__label{
+	display: inline-block;
+	border: 1px solid #ccc; 
+	width: 50px;
+	height: 30px;
+	background: #edefef;
+	margin-right: -5px;
+	text-align: center;
+	vertical-align: middle;
+	}
+}
+.btnsex{
+		&__female-label{
+			border-top-left-radius: 20px;
+		    border-bottom-left-radius: 20px;
+		}
+		&__male-label{
+			border-top-right-radius: 20px;
+		    border-bottom-right-radius: 20px;
+		}
+		&__female-label:after{
+			content: url(../img/Shape-10-copy-42.png);
+		}
+		&__female:checked + &__female-label{
+			background: @color;
+		}
+		&__female:checked + &__female-label:after{
+			content: url(../img/Shape-10-copy-33.png);
+		}
+		&__male-label:after{
+			content: url(../img/Shape-10-copy-22.png);
+		}
+		&__male:checked + &__male-label{
+			background: @color;
+		}
+		&__male:checked + &__male-label:after{
+			content: url(../img/Shape-10-copy-43.png);
+
+		}
+}
