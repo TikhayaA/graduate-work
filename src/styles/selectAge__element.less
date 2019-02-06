@@ -1,0 +1,54 @@
+.selectAge{
+	&__element{
+		display: inline;
+		position: relative;
+		position:relative;
+	}
+	&__element:after{
+		content: "";
+		position:absolute;
+		display: inline-block;
+		border-bottom: 0 solid transparent;
+		border-left:5px solid transparent;
+		border-right:5px solid transparent;
+		border-top:5px solid #787878;
+		z-index: 1;
+		right:30px ;
+		top: 8px;
+	}
+	&__element:before{
+		content: "";
+		position:absolute;
+		width: 40px;
+		height: 33px;
+		border-left:1px solid #ccc;
+		
+		right: 11px;
+		top: -7px;
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
+		pointer-events:none;
+		background-color: #ffd40d;
+		background-image: linear-gradient(to top, #e6e6e6 0%, #f5fafb 100%);
+		
+	}
+	
+	&__width{
+		width: 17%;
+	}
+	
+	&__year{
+		width: 21%;
+	}
+	&__month{
+		width: 26%;
+	}
+	&__select{
+		appearance:none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		padding-left:25px;
+		margin: 5px; 
+	}
+	
+}

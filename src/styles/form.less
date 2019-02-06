@@ -21,11 +21,24 @@
   background: linear-gradient(#f8f8f8 25%, #ff8414 66%, );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 	}
 	&__text{
+		display: inline-block;
 		font-family: @fontuserform;
 		font-size: 18px;
 		color: @fontcolor;
+		min-width: 95px;
 	}
-
+	&__display{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__margin{
+		margin: 0  0 10px 0;
+	}
+	&__marginname{
+		margin: 0  0 20px 0;
+	}
 }
